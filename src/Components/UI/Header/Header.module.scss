@@ -1,0 +1,40 @@
+$padding: 1em;
+$primaryColor: #48bd67;
+
+@mixin calc($property, $percent, $pixels){
+  $property : calc(#{$percent} - #{$pixels});
+  $property : -webkit-calc(#{$percent} - #{$pixels});
+  $property : -o-calc(#{$percent} - #{$pixels});
+  $property : -moz-calc(#{$percent} - #{$pixels});
+}
+
+.container {
+  z-index: 1;
+  height: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: $primaryColor;
+  padding: $padding;
+  display: flex;
+  flex-direction: row;
+  @include calc(width, 100%, ($padding*2));
+}
+
+.itemContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+}
+
+@media (max-width:1025px) {
+  .itemContainer {
+    width: 100%;
+  }
+}
+
+.logo{
+  width: 60px;
+}

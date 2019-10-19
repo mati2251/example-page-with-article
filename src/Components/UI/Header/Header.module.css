@@ -1,0 +1,26 @@
+.container {
+  z-index: 1;
+  height: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #48bd67;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60%;
+}
+
+@media (max-width: 1025px) {
+  .itemContainer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */

@@ -1,0 +1,61 @@
+$margin: 15em;
+$smallMargin: 8em;
+$mobileMargin: 3em;
+$smallMobileMargin: 1em;
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main{
+  margin-left: $margin;
+  margin-right: $margin;
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: justify;
+}
+
+
+.header{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .main{
+    margin-left: $smallMargin;
+    margin-right: $smallMargin;
+  }
+}
+
+@media (max-width: 700px) {
+  .main{
+    margin-right: $mobileMargin;
+    margin-left: $mobileMargin
+  }
+  .header{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main{
+    margin-right: $smallMobileMargin;
+    margin-left: $smallMobileMargin;
+  }
+}
+
+.slider{
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

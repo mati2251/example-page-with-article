@@ -1,0 +1,43 @@
+$width: 100%;
+
+.container{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 0;
+  width: 60rem;
+  height: 30rem;
+}
+
+@media (max-width: 880px) {
+  .container{
+    width: 40rem;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    width: 30rem;
+    height: 15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    width: 16rem;
+    height: 8rem;
+  }
+}
+
+.image{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+
+.button{
+  z-index: 10;
+}

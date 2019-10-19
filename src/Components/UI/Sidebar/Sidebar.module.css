@@ -1,0 +1,86 @@
+.header {
+  background-color: #48bd67;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  align-self: center;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+
+.sidebarClose, .sidebarOpen {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  background-color: #48bd67;
+  transition: all ease 0.6s;
+  z-index: 10;
+}
+
+.sidebarOpen {
+  left: 0;
+}
+
+.sidebarClose {
+  left: -30%;
+}
+
+.button {
+  all: unset;
+  margin-left: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.closeButton {
+  align-self: flex-end;
+  padding: 1rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+@media (max-width: 641px) {
+  .sidebarOpen, .sidebarClose {
+    width: 50%;
+  }
+
+  .sidebarClose {
+    left: -50%;
+  }
+}
+@media (max-width: 350px) {
+  .sidebarOpen, .sidebarClose {
+    width: 70%;
+  }
+
+  .sidebarClose {
+    left: -70%;
+  }
+}
+
+/*# sourceMappingURL=Sidebar.module.css.map */

@@ -1,0 +1,12 @@
+@media (max-width: 851px) {
+  .header {
+    display: none;
+  }
+}
+@media (min-width: 851px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Layout.module.css.map */

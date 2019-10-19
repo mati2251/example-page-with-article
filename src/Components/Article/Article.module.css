@@ -1,0 +1,39 @@
+.img {
+  width: 50em;
+  height: 25em;
+}
+
+.article__container {
+  all: unset;
+  background-color: #eee;
+  -webkit-box-shadow: 10px 10px 10px 0px #aaaaaa;
+  -moz-box-shadow: 10px 10px 10px 0px #aaaaaa;
+  box-shadow: 10px 10px 10px 0px #aaaaaa;
+  margin-bottom: 20px;
+}
+
+.article__container:hover {
+  cursor: pointer;
+}
+
+.article__title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 6px;
+}
+
+.article__tagsContainer {
+  margin: 6px;
+}
+
+.article__author {
+  margin: 6px;
+  font-size: 14px;
+}
+
+.article__date {
+  margin: 6px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=Article.module.css.map */
