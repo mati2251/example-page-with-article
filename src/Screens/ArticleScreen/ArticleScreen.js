@@ -35,7 +35,7 @@ const ArticleScreen = (props) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.article}>
-				<img src={img} alt={"description"}/>
+				<img src={img} alt={"description"} className={styles.photo}/>
 				{article}
 			</div>
 		</div>

@@ -22,3 +22,76 @@
 .tags{
   border-radius: 0;
 }
+
+@media (max-width: 1000px){
+  .article{
+    width: 800px;
+  }
+  .photo{
+    width: 800px;
+  }
+}
+
+@media (max-width: 800px){
+  .article{
+    width: 600px;
+  }
+
+  .photo{
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px){
+  .article{
+    width: 400px;
+  }
+
+  .photo{
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px){
+  .article{
+    width: 350px;
+  }
+
+  .photo{
+    width: 350px;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 350px){
+  .article{
+    width: 300px;
+  }
+
+  .photo{
+    width: 300px;
+  }
+}
+
+@media (max-width: 300px){
+  .article{
+    width: 250px;
+  }
+
+  .photo{
+    width: 250px;
+  }
+}
+
+@media (max-width: 200px){
+  .article{
+    width: 150px;
+  }
+
+  .photo{
+    width: 150px
+  }
+}
