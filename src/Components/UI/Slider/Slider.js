@@ -5,8 +5,10 @@ import img3 from '../../../assets/3.jpg';
 import img4 from '../../../assets/4.jpeg'
 import img5 from '../../../assets/5.jpeg'
 import styles from './Slider.module.scss'
+//insert image import if you want use this in Slider
 
 const Slider = () => {
+    //insert image to slider in this array below
     const images = [img1, img2, img3, img4, img5];
     const [i, setI] = useState(0);
     const order = (number) =>{

@@ -40,7 +40,7 @@ const ArticleByTag = (props) => {
 	return (
 		<div>
 			<div className={styles.container}>
-				<header className={styles.header}>Tag Nowe</header>
+				<header className={styles.header}>Tag {tag}</header>
 				{articleJSX}
 			</div>
 		</div>

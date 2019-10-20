@@ -2,6 +2,7 @@ import * as firebase from "firebase";
 
 
 export const connectFirebase = () => {
+	// This const is firebase config. If you want change it.
 	const firebaseConfig = {
 		apiKey: "AIzaSyCESSkTmp4lcauyiC7UG8DdA89gulO3gK8",
 		authDomain: "relations-20efb.firebaseapp.com",
