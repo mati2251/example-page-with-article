@@ -9,6 +9,7 @@ import Contact from "./Screens/Contact/Contact";
 import Home from "./Screens/Home/Home";
 import Footer from "./Components/UI/Footer/Footer";
 import ArticleByTag from "./Screens/ArticleByTag/ArticleByTag";
+import ArticleScreen from "./Screens/ArticleScreen/ArticleScreen";
 
 class App extends Component {
     render() {
@@ -21,6 +22,7 @@ class App extends Component {
                 <Route path="/relations/" component={Relations}/>
                 <Route path="/contact/" component={Contact} />
                 <Route path="/tags" component={ArticleByTag}/>
+                <Route path="/article" component={ArticleScreen}/>
                 <Footer/>
             </Router>
         );

@@ -4,23 +4,12 @@ import styles from './Relations.module.scss'
 import img from '../../assets/1.jpg'
 import Tags from "../../Components/Tags/Tags";
 import * as firebase from 'firebase';
+import {connectFirebase} from "../../FirebaseConnect/FirebaseConnect";
 
 
 const Relations = () => {
 
-		const firebaseConfig = {
-			apiKey: "AIzaSyCESSkTmp4lcauyiC7UG8DdA89gulO3gK8",
-			authDomain: "relations-20efb.firebaseapp.com",
-			databaseURL: "https://relations-20efb.firebaseio.com",
-			projectId: "relations-20efb",
-			storageBucket: "relations-20efb.appspot.com",
-			messagingSenderId: "622631998349",
-			appId: "1:622631998349:web:134c7f2ef7e1766fcf23c4",
-			measurementId: "G-58EM5RQ8SQ"
-		};
-		if (!firebase.apps.length) {
-			firebase.initializeApp(firebaseConfig);
-		}
+		connectFirebase();
 
 		const [articleJSX, setArticleJSX] = useState(undefined);
 
@@ -33,12 +22,12 @@ const Relations = () => {
 				const copyTags = [];
 				for (let key in articles) {
 					const tagsFromArticle = articles[key].tags.split(" ");
-					tagsFromArticle.forEach( item => {
-						if(copyTags.find(i => i === item) === undefined) {
+					tagsFromArticle.forEach(item => {
+						if (copyTags.find(i => i === item) === undefined) {
 							copyTags.push(item)
 						}
 					});
-					article.push(<Article header={articles[key].title} image={img} tags={tagsFromArticle}
+					article.push(<Article header={articles[key].title} image={img} tags={tagsFromArticle} id={key}
 					                      author={articles[key].author} date={articles[key].date} key={key}/>);
 				}
 				if (article !== articleJSX) {
@@ -49,7 +38,9 @@ const Relations = () => {
 		};
 
 		useEffect(() => {
-				getData();
+				if (articleJSX === undefined) {
+					getData();
+				}
 			}
 		);
 
