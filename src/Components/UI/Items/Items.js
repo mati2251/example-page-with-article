@@ -4,7 +4,7 @@ import {withRouter} from 'react-router-dom'
 
 const Items = (props) => {
     const {pathname} = props.location;
-    const items = [{title: "RELATIONS", toLink: "/relations"},
+    const items = [{title: "RELATIONS", toLink: "/example-page-with-article/relations"},
         {title: "ABOUT US", toLink: "/example-page-with-article/about"},
         {title: "OUR PARTNERS", toLink: "/example-page-with-article/partners"},
         {title: "CONTACT", toLink: "/example-page-with-article/contact"}
