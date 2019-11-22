@@ -12,7 +12,7 @@ const Sidebar = (props) => {
                 <MdMenu className={styles.icon}/>
             </button>
             <div className={styles.logoContainer}>
-                <Item title="logo" toLink="/" className={styles.logo}/>
+                <Item title="logo" toLink="/example-page-with-article" className={styles.logo}/>
             </div>
             <div className={barIsOpen}>
                 <button className={styles.button + " " + styles.closeButton}

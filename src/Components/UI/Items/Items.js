@@ -5,9 +5,9 @@ import {withRouter} from 'react-router-dom'
 const Items = (props) => {
     const {pathname} = props.location;
     const items = [{title: "RELATIONS", toLink: "/relations"},
-        {title: "ABOUT US", toLink: "/about"},
-        {title: "OUR PARTNERS", toLink: "/partners"},
-        {title: "CONTACT", toLink: "/contact"}
+        {title: "ABOUT US", toLink: "/example-page-with-article/about"},
+        {title: "OUR PARTNERS", toLink: "/example-page-with-article/partners"},
+        {title: "CONTACT", toLink: "/example-page-with-article/contact"}
     ];
     const tmp = items.map((item, index) => {
         if(item.toLink === pathname || item.toLink === pathname + "/"){

@@ -16,13 +16,13 @@ class App extends Component {
         return (
             <Router className="App">
                 <Layout/>
-                <Route path="/" exact component={Home}/>
-                <Route path="/about/" component={AboutUs} />
-                <Route path="/partners/" component={Partners} />
-                <Route path="/relations/" component={Relations}/>
-                <Route path="/contact/" component={Contact} />
-                <Route path="/tags" component={ArticleByTag}/>
-                <Route path="/article" component={ArticleScreen}/>
+                <Route path="/example-page-with-article/" exact component={Home}/>
+                <Route path="/example-page-with-article/about/" component={AboutUs} />
+                <Route path="/example-page-with-article/partners/" component={Partners} />
+                <Route path="/example-page-with-article/relations/" component={Relations}/>
+                <Route path="/example-page-with-article/contact/" component={Contact} />
+                <Route path="/example-page-with-article/tags" component={ArticleByTag}/>
+                <Route path="/example-page-with-article/article" component={ArticleScreen}/>
                 <Footer/>
             </Router>
         );
