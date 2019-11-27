@@ -6,7 +6,7 @@ import Items from "../Items/Items";
 const Header = (props) => {
     return (
         <div className={styles.container}>
-            <Item title="LOGO" toLink="/example-page-with-articles"/>
+            <Item title="LOGO" toLink="/example-page-with-article"/>
             <div className={styles.itemContainer}>
                 <Items/>
             </div>

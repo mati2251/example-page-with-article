@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const Tag = (props) => {
     return (
-        <Link to={"/tags?tag=" + props.children} className={styles.tag}>
+        <Link to={"/example-page-with-article/tags?tag=" + props.children} className={styles.tag}>
             {props.children}
         </Link>
     )
